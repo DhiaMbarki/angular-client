@@ -1,0 +1,30 @@
+@import 'src/theme/theme.scss';
+@import 'login.theme';
+
+// Light theme
+@include login-page-theme($app-theme);
+
+// Dark theme
+.dark-theme {
+  @include login-page-theme($dark-theme);
+}
+
+:host,
+.page-content {
+  height: 100%;
+}
+
+.login-input {
+  padding: 1em;
+  width: 20em;
+  border-radius: 0.5em;
+  // box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
+}
+
+// .auth-errors {
+//   margin: 0 auto 5px;
+//   padding: 3px 3px 3px;
+//   color: #b94a48;
+//   background-color: #f2dede;
+//   border-radius: 2px;
+// }

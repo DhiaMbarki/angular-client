@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": []
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
+  },
+  "exclude": [
+    "setupJest.ts",
+    "**/tests/**",
+    "**/*.spec.ts",
+    "**/*.tns.ts",
+    "**/*.android.ts",
+    "**/*.ios.ts"
+  ]
+}

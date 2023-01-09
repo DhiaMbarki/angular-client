@@ -1,0 +1,11 @@
+<ActionBar title="Login"></ActionBar>
+<StackLayout [formGroup]="loginForm">
+  <TextField
+    formControlName="username"
+    hint="username"
+    autocorrect="false"
+    autocapitalizationType="none"
+  ></TextField>
+  <TextField formControlName="password" hint="password" secure="true"></TextField>
+  <Button text="login" (tap)="onSubmit(loginForm)"></Button>
+</StackLayout>

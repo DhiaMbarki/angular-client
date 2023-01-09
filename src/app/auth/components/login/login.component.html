@@ -1,0 +1,33 @@
+<div
+  class="page-content"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  [ngClass]="{ 'dark-theme': darkTheme$ | async }"
+>
+  <div class="login-input mat-elevation-z3">
+    <form
+      fxLayout="column"
+      class="login-form"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit(loginForm)"
+    >
+      <mat-form-field color="primary" appearance="standard">
+        <mat-label>Username</mat-label>
+        <input matInput type="text" formControlName="username" />
+      </mat-form-field>
+      <mat-form-field color="primary" appearance="standard">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" />
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="accent"
+        class="login-btn"
+        type="submit"
+        [disabled]="!loginForm.valid"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>

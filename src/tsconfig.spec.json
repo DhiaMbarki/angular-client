@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "types": ["node", "jest"]
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
+  },
+  "files": ["polyfills.ts"],
+  "include": ["**/*.spec.ts", "**/*.d.ts"],
+  "exclude": ["**/*.tns.ts", "**/*.android.ts", "**/*.ios.ts"]
+}

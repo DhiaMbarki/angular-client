@@ -1,0 +1,12 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  padding: 0.5em;
+  &.list {
+    overflow: auto;
+  }
+}

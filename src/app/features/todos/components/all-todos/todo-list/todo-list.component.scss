@@ -1,0 +1,9 @@
+.mat-card {
+  margin-bottom: 1em;
+  :last-of-type {
+    margin-bottom: none;
+  }
+  .button {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+<div fxLayout="row" fxLayout.xs="column" class="container">
+  <div fxFlex="1 0 0" class="column">
+    <demo-todo-detail (saved)="saveTodo($event)" (cancelled)="clearTodo()"></demo-todo-detail>
+  </div>
+  <div class="column list" fxFlex="2 0 0">
+    <demo-all-todos
+      [todo$]="userTodo$"
+      [todoFilter$]="todoFilter$"
+      (selected)="navigateTo($event)"
+      (delete)="deleteTodo($event)"
+      (update)="saveTodo($event)"
+      (selectFilterChanged)="selectFilterChanged($event)"
+      (searchFilterChanged)="searchFilterChanged($event)"
+    >
+    </demo-all-todos>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+@import 'src/theme/theme.scss';
+@import 'user-drop-down.theme';
+
+// Light theme
+@include user-drop-down-theme($app-theme);
+
+// Dark theme
+.dark-theme {
+  @include user-drop-down-theme($dark-theme);
+}
+
+.user-dropdown-overlay-container {
+  border-radius: 0.2em;
+}
+
+.user-profile {
+  cursor: pointer;
+}
+
+.logout-button {
+  width: 100%;
+}
